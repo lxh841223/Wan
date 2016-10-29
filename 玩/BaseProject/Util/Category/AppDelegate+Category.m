@@ -37,7 +37,9 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     //  启动友盟统计功能
-    
+    UMConfigInstance.appKey = @"5814a130310c9310d50007e3";
+    UMConfigInstance.channelId = @"App Store";
+    [MobClick startWithConfigure:UMConfigInstance];
 }
 
 

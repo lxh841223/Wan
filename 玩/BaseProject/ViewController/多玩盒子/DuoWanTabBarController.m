@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  DuoWanTabBarController.m
 //  BaseProject
 //
-//  Created by jiyingxin on 15/10/22.
-//  Copyright © 2015年 Tarena. All rights reserved.
+//  Created by Lxh on 16/10/29.
+//  Copyright © 2016年 Tarena. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DuoWanTabBarController.h"
 
-@interface ViewController ()
+@interface DuoWanTabBarController ()
 
 @end
 
-@implementation ViewController
+@implementation DuoWanTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
