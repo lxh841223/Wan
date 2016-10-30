@@ -7,6 +7,7 @@
 //
 
 #import "TuWanViewController.h"
+#import "TuWanViewModel.h"
 
 @interface TuWanViewController ()
 
@@ -28,6 +29,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenSeaColor];
     self.navigationItem.title = @"兔玩";
+    [Factory addMenuItemToVC:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,3 +49,25 @@
 */
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

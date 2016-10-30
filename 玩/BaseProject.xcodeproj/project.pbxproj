@@ -69,6 +69,8 @@
 		F5811EBE1DC4E64400D58F8F /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5811EBD1DC4E64400D58F8F /* MyInfoViewController.m */; };
 		F5811EC11DC4E66C00D58F8F /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5811EC01DC4E66C00D58F8F /* RankListViewController.m */; };
 		F5811EC41DC4E6BB00D58F8F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5811EC31DC4E6BB00D58F8F /* LeftViewController.m */; };
+		F5B3E7DA1DC5CD7A00992677 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3E7D91DC5CD7A00992677 /* Factory.m */; };
+		F5B3E7DD1DC5D12F00992677 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3E7DC1DC5D12F00992677 /* TuWanViewModel.m */; };
 		F5FD40F11DC0B53F00B9D78A /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40C71DC0B53F00B9D78A /* AllHeroModel.m */; };
 		F5FD40F21DC0B53F00B9D78A /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40C91DC0B53F00B9D78A /* BestGroupModel.m */; };
 		F5FD40F31DC0B53F00B9D78A /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40CC1DC0B53F00B9D78A /* FreeHeroModel.m */; };
@@ -197,6 +199,10 @@
 		F5811EC01DC4E66C00D58F8F /* RankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankListViewController.m; sourceTree = "<group>"; };
 		F5811EC21DC4E6BB00D58F8F /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		F5811EC31DC4E6BB00D58F8F /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		F5B3E7D81DC5CD7A00992677 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		F5B3E7D91DC5CD7A00992677 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		F5B3E7DB1DC5D12F00992677 /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
+		F5B3E7DC1DC5D12F00992677 /* TuWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewModel.m; sourceTree = "<group>"; };
 		F5FD40C61DC0B53F00B9D78A /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		F5FD40C71DC0B53F00B9D78A /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		F5FD40C81DC0B53F00B9D78A /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -514,6 +520,8 @@
 			isa = PBXGroup;
 			children = (
 				3804CE481BD758F10046C8C8 /* Category */,
+				F5B3E7D81DC5CD7A00992677 /* Factory.h */,
+				F5B3E7D91DC5CD7A00992677 /* Factory.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -617,6 +625,8 @@
 		F5811EB31DC4E4D400D58F8F /* 兔玩游戏 */ = {
 			isa = PBXGroup;
 			children = (
+				F5B3E7DB1DC5D12F00992677 /* TuWanViewModel.h */,
+				F5B3E7DC1DC5D12F00992677 /* TuWanViewModel.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -876,6 +886,7 @@
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
 				F5FD410D1DC0B5F500B9D78A /* XiMaNetManager.m in Sources */,
 				F5FD40FB1DC0B53F00B9D78A /* HeroWeekDataModel.m in Sources */,
+				F5B3E7DD1DC5D12F00992677 /* TuWanViewModel.m in Sources */,
 				F5FD410A1DC0B5DF00B9D78A /* TuWanNetManager.m in Sources */,
 				F5FD40FF1DC0B53F00B9D78A /* ToolMenuModel.m in Sources */,
 				F5811EBE1DC4E64400D58F8F /* MyInfoViewController.m in Sources */,
@@ -896,6 +907,7 @@
 				F5FD41041DC0B53F00B9D78A /* RankingListModel.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
+				F5B3E7DA1DC5CD7A00992677 /* Factory.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				F5FD41031DC0B53F00B9D78A /* AlbumModel.m in Sources */,
 				F5811EBB1DC4E61100D58F8F /* TuWanViewController.m in Sources */,
