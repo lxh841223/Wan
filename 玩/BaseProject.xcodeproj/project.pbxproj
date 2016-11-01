@@ -71,6 +71,9 @@
 		F5811EC41DC4E6BB00D58F8F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5811EC31DC4E6BB00D58F8F /* LeftViewController.m */; };
 		F5B3E7DA1DC5CD7A00992677 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3E7D91DC5CD7A00992677 /* Factory.m */; };
 		F5B3E7DD1DC5D12F00992677 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3E7DC1DC5D12F00992677 /* TuWanViewModel.m */; };
+		F5F7ACA91DC6F10700356CB7 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7ACA81DC6F10700356CB7 /* TuWanListCell.m */; };
+		F5F7ACAC1DC6F12700356CB7 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7ACAB1DC6F12700356CB7 /* TuWanImageCell.m */; };
+		F5FCFBAE1DC6279700309010 /* TuWanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCFBAD1DC6279700309010 /* TuWanListViewController.m */; };
 		F5FD40F11DC0B53F00B9D78A /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40C71DC0B53F00B9D78A /* AllHeroModel.m */; };
 		F5FD40F21DC0B53F00B9D78A /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40C91DC0B53F00B9D78A /* BestGroupModel.m */; };
 		F5FD40F31DC0B53F00B9D78A /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD40CC1DC0B53F00B9D78A /* FreeHeroModel.m */; };
@@ -203,6 +206,12 @@
 		F5B3E7D91DC5CD7A00992677 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		F5B3E7DB1DC5D12F00992677 /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
 		F5B3E7DC1DC5D12F00992677 /* TuWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewModel.m; sourceTree = "<group>"; };
+		F5F7ACA71DC6F10700356CB7 /* TuWanListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListCell.h; sourceTree = "<group>"; };
+		F5F7ACA81DC6F10700356CB7 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
+		F5F7ACAA1DC6F12700356CB7 /* TuWanImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanImageCell.h; sourceTree = "<group>"; };
+		F5F7ACAB1DC6F12700356CB7 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
+		F5FCFBAC1DC6279700309010 /* TuWanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListViewController.h; sourceTree = "<group>"; };
+		F5FCFBAD1DC6279700309010 /* TuWanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListViewController.m; sourceTree = "<group>"; };
 		F5FD40C61DC0B53F00B9D78A /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		F5FD40C71DC0B53F00B9D78A /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		F5FD40C81DC0B53F00B9D78A /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -540,6 +549,10 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5F7ACA71DC6F10700356CB7 /* TuWanListCell.h */,
+				F5F7ACA81DC6F10700356CB7 /* TuWanListCell.m */,
+				F5F7ACAA1DC6F12700356CB7 /* TuWanImageCell.h */,
+				F5F7ACAB1DC6F12700356CB7 /* TuWanImageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,6 +606,8 @@
 			children = (
 				F5811EB91DC4E61100D58F8F /* TuWanViewController.h */,
 				F5811EBA1DC4E61100D58F8F /* TuWanViewController.m */,
+				F5FCFBAC1DC6279700309010 /* TuWanListViewController.h */,
+				F5FCFBAD1DC6279700309010 /* TuWanListViewController.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -832,7 +847,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		98E2A2A0A104CC01695759D4 /* [CP] Embed Pods Frameworks */ = {
@@ -882,6 +897,7 @@
 				F5FD41021DC0B53F00B9D78A /* TuWanModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				F5FD40F61DC0B53F00B9D78A /* HeroCZModel.m in Sources */,
+				F5FCFBAE1DC6279700309010 /* TuWanListViewController.m in Sources */,
 				F5FD40F41DC0B53F00B9D78A /* GiftModel.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
 				F5FD410D1DC0B5F500B9D78A /* XiMaNetManager.m in Sources */,
@@ -892,6 +908,7 @@
 				F5811EBE1DC4E64400D58F8F /* MyInfoViewController.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				F5FD40F91DC0B53F00B9D78A /* HeroSkinModel.m in Sources */,
+				F5F7ACA91DC6F10700356CB7 /* TuWanListCell.m in Sources */,
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
@@ -899,6 +916,7 @@
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				F5FD40FC1DC0B53F00B9D78A /* ItemDetailModel.m in Sources */,
 				F5FD41071DC0B5C100B9D78A /* DuoWanNetManager.m in Sources */,
+				F5F7ACAC1DC6F12700356CB7 /* TuWanImageCell.m in Sources */,
 				F5811EC11DC4E66C00D58F8F /* RankListViewController.m in Sources */,
 				F5811EB81DC4E5B800D58F8F /* DuoWanTabBarController.m in Sources */,
 				F5FD40F81DC0B53F00B9D78A /* HeroGiftModel.m in Sources */,

@@ -82,6 +82,7 @@
             NSAssert1(NO, @"%s:type类型不正确", __func__);
             break;
     }
+    
     return [self GET:kTuWanPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([TuWanModel mj_objectWithKeyValues:responseObj], error);
     }];

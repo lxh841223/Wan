@@ -68,13 +68,14 @@ PODS:
   - PINRemoteImage/iOS (3.0.0-beta.3):
     - PINRemoteImage/Core
   - RESideMenu (4.0.7)
-  - SDWebImage (3.8.0):
-    - SDWebImage/Core (= 3.8.0)
-  - SDWebImage/Core (3.8.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - Shimmer (1.0.2)
   - SVProgressHUD (2.0.3)
   - SWTableViewCell (0.3.7)
   - TPKeyboardAvoiding (1.3)
+  - WMPageController (2.0.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -89,13 +90,14 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - MLTransition
-  - MWPhotoBrowser (= 2.1.2)
+  - MWPhotoBrowser
   - RESideMenu
-  - SDWebImage (= 3.8)
+  - SDWebImage
   - Shimmer
   - SVProgressHUD
   - SWTableViewCell
   - TPKeyboardAvoiding
+  - WMPageController
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -115,12 +117,13 @@ SPEC CHECKSUMS:
   PINCache: 6911fe422a633e18b3d3ddf2bd4f0e55e36e2892
   PINRemoteImage: 308731aa6534500e58fc211b9cc2bb7252df25ba
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
-  SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  WMPageController: 2267f3b40620eb0a74abb19ee2a46ce1d7c61754
 
-PODFILE CHECKSUM: c6b19de13688a714951699b8c4a90daf09ca58f6
+PODFILE CHECKSUM: 804d7b75d9da416db306cb721a70191435dbf7f1
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

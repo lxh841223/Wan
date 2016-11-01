@@ -36,7 +36,6 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont flatFontOfSize:kNaviTitleFontSize], NSForegroundColorAttributeName : kNaviTitleColor}];
 }
 
-
 /** 代码重构：用代码把功能实现以后，考虑代码结构如何编写可以更加方便后期维护 */
 - (UIWindow *)window {
     if (!_window) {

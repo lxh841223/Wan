@@ -23,13 +23,15 @@
 + (NSDictionary *)mj_objectClassInArray {
     return @{@"showitem" : [TuWanDataIndexpicShowitemModel class]};
 }
-@end
 
-@implementation TuWanDataIndexpicInfochildModel
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
     return @{@"typeName" : @"typename",
              @"desc" : @"description"};
 }
+@end
+
+@implementation TuWanDataIndexpicInfochildModel
+
 @end
 
 @implementation TuWanDataIndexpicShowitemModel

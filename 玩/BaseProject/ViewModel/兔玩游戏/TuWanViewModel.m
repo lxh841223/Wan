@@ -99,6 +99,16 @@
 - (NSURL *)detailURLForRowInIndexPic:(NSInteger)row {
     return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].html5];
 }
+/** 通过行数 返回此行中对应的图片链接数组 */
+- (NSArray *)iconURLSForRowInList:(NSInteger)row {
+    NSArray *arr = [self modelForArr:self.dataArr row:row].showitem;
+    NSMutableArray *array = [NSMutableArray new];
+    for (int i = 0; i < arr.count; i++) {
+        TuWanDataIndexpicShowitemModel *model = arr[i];
+        [array addObject:[NSURL URLWithString:model.pic]];
+    }
+    return [array copy];
+}
 @end
 
 
