@@ -23,6 +23,7 @@
         _descLb.font = [UIFont systemFontOfSize:14];
         _descLb.textColor = [UIColor lightGrayColor];
         _descLb.numberOfLines = 0;
+        
     }
     return _descLb;
 }
@@ -30,6 +31,8 @@
 - (UIImageView *)iconIV {
     if (!_iconIV) {
         _iconIV = [UIImageView new];
+        _iconIV.contentMode = UIViewContentModeScaleAspectFill;
+        _iconIV.clipsToBounds = YES;
     }
     return _iconIV;
 }
@@ -56,6 +59,8 @@
             make.size.mas_equalTo(CGSizeMake(93, 70));
             make.left.mas_equalTo(10);
             make.centerY.mas_equalTo(0);
+            make.top.mas_equalTo(10);
+            make.bottom.mas_equalTo(-10);
         }];
         
 //题目 距离图片右边缘8，右边缘10，上边缘比图片上边缘矮3

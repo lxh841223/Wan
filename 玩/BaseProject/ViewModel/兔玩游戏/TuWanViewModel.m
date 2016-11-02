@@ -109,6 +109,27 @@
     }
     return [array copy];
 }
+/** 当前数据类型是视频 video */
+- (BOOL)isVideoInListForRow:(NSInteger)row {
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"video"];
+}
+- (BOOL)isVideoInIndexPicForRow:(NSInteger)row {
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"video"];
+}
+/** 当前数据类型是图片 pic */
+- (BOOL)isPicInListForRow:(NSInteger)row {
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"pic"];
+}
+- (BOOL)isPicInIndexPicForRow:(NSInteger)row {
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"pic"];
+}
+/** 当前数据类型是html all */
+- (BOOL)isHtmlInListForRow:(NSInteger)row {
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"all"];
+}
+- (BOOL)isHtmlInIndexPicForRow:(NSInteger)row {
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"all"];
+}
 @end
 
 

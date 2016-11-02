@@ -40,6 +40,8 @@
     UMConfigInstance.appKey = @"5814a130310c9310d50007e3";
     UMConfigInstance.channelId = @"App Store";
     [MobClick startWithConfigure:UMConfigInstance];
+    //  友盟统计默认情况下会关闭掉xcode默认的crash提示
+    [MobClick setLogEnabled:YES];
 }
 
 

@@ -30,6 +30,8 @@
 - (UIImageView *)iconIV0 {
     if (!_iconIV0) {
         _iconIV0 = [UIImageView new];
+        _iconIV0.contentMode = UIViewContentModeScaleAspectFill;
+        _iconIV0.clipsToBounds = YES;
     }
     return _iconIV0;
 }
@@ -37,6 +39,8 @@
 - (UIImageView *)iconIV1 {
     if (!_iconIV1) {
         _iconIV1 = [UIImageView new];
+        _iconIV1.contentMode = UIViewContentModeScaleAspectFill;
+        _iconIV1.clipsToBounds = YES;
     }
     return _iconIV1;
 }
@@ -44,6 +48,8 @@
 - (UIImageView *)iconIV2 {
     if (!_iconIV2) {
         _iconIV2 = [UIImageView new];
+        _iconIV2.contentMode = UIViewContentModeScaleAspectFill;
+        _iconIV2.clipsToBounds = YES;
     }
     return _iconIV2;
 }
@@ -75,7 +81,11 @@
         [_iconIV0 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(10);
             make.top.mas_equalTo(_titleLb.mas_bottom).mas_equalTo(7);
-            make.height.mas_equalTo(87);
+            //115 * 87
+            CGFloat width = (kWindowW - 15 * 2) / 3.0;
+            CGFloat height = width / 115.0 * 87;
+            make.height.mas_equalTo(height);
+            make.bottom.mas_equalTo(-10);
         }];
         
         [_iconIV1 mas_makeConstraints:^(MASConstraintMaker *make) {
