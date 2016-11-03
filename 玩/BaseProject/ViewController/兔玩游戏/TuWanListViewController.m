@@ -12,6 +12,8 @@
 #import "TuWanImageCell.h"
 #import "iCarousel.h"
 #import "TuWanHtmlViewController.h"
+#import "TuWanVideoViewController.h"
+#import "TuWanPicViewController.h"
 
 @interface TuWanListViewController () <iCarouselDelegate, iCarouselDataSource>
 @property (nonatomic, strong) TuWanViewModel *tuWanVM;
@@ -127,6 +129,15 @@
         TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc] initWithURL:[self.tuWanVM detailURLForRowInIndexPic:index]];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    if ([self.tuWanVM isVideoInListForRow:index]) {
+        TuWanVideoViewController *vc = [[TuWanVideoViewController alloc] initWithAid:[self.tuWanVM aidInListForRow:index]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if ([self.tuWanVM isPicInListForRow:index]) {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc] initWithAid:[self.tuWanVM aidInListForRow:index]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 
 
@@ -193,6 +204,14 @@ kRemoveCellSeparator
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([self.tuWanVM isHtmlInListForRow:indexPath.row]) {
         TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc] initWithURL:[self.tuWanVM detailURLForRowInList:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if ([self.tuWanVM isVideoInListForRow:indexPath.row]) {
+        TuWanVideoViewController *vc = [[TuWanVideoViewController alloc] initWithAid:[self.tuWanVM aidInListForRow:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if ([self.tuWanVM isPicInListForRow:indexPath.row]) {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc] initWithAid:[self.tuWanVM aidInListForRow:indexPath.row]];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

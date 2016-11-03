@@ -12,6 +12,7 @@
 #define kAppId      @"appid" : @"1"
 #define kClassMore  @"classmore" : @"indexpic"
 #define kAppVer     @"appver" : @"2.1"
+#define kDetailPath @"http://api.tuwan.com/app/"
 
 #define kRemoveClassMore(dic)   [dic removeObjectForKey:@"classmore"];
 #define kSetClass(string, dic)  [dic setObject:string forKey:@"class"];
@@ -85,6 +86,20 @@
     
     return [self GET:kTuWanPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([TuWanModel mj_objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getVideoDetailWithId:(NSString *)aid completionHandle:(void (^)(id, NSError *))completionHandle {
+    return [self GET:kDetailPath parameters:@{kAppId, @"aid" : aid} completionHandler:^(id responseObj, NSError *error) {
+    //这里一定要用firstObj方法来取，不能用[0]。 如果数组为空  第一种不会崩溃，值为nil。  第二种会数组越界
+        completionHandle([TuWanVideoModel mj_objectArrayWithKeyValuesArray:responseObj].firstObject, error);
+    }];
+}
+
++ (id)getPicDetailWithId:(NSString *)aid completionHandle:(void (^)(id, NSError *))completionHandle {
+    return [self GET:kDetailPath parameters:@{kAppId, @"aid" : aid} completionHandler:^(id responseObj, NSError *error) {
+    //这里一定要用firstObj方法来取，不能用[0]。 如果数组为空  第一种不会崩溃，值为nil。  第二种会数组越界
+        completionHandle([TuWanPicModel mj_objectArrayWithKeyValuesArray:responseObj].firstObject, error);
     }];
 }
 @end

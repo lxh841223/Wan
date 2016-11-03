@@ -125,10 +125,18 @@
 }
 /** 当前数据类型是html all */
 - (BOOL)isHtmlInListForRow:(NSInteger)row {
-    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"all"];
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"all"] || [[self modelForArr:self.dataArr row:row].type isEqualToString:@"ad"] ;
 }
 - (BOOL)isHtmlInIndexPicForRow:(NSInteger)row {
-    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"all"];
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"all"] || [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"ad"];
+}
+
+/** 返回某行数据的aid */
+- (NSString *)aidInListForRow:(NSInteger)row {
+    return [self modelForArr:self.dataArr row:row].aid;
+}
+- (NSString *)aidInIndexPicForRow:(NSInteger)row {
+    return [self modelForArr:self.indexPicArr row:row].aid;
 }
 @end
 
