@@ -9,7 +9,7 @@
 #import "XiMaNetManager.h"
 
 #define kRankListPath   @"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album"
-#define kAlbumPath      @"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/%ld/20"
+#define kAlbumPath      @"http://mobile.ximalaya.com/mobile/others/ca/album/track/%@/true/%@/20"
 
 @implementation XiMaNetManager
 + (id)getRankListWithPageId:(NSInteger)pageId completionHandle:(void (^)(id, NSError *))completionHandle {
@@ -19,7 +19,7 @@
 }
 
 + (id)getAlbumWithId:(NSInteger)ID pageId:(NSInteger)pageId completionHandle:(void (^)(id, NSError *))completionHandle {
-    NSString *path = [NSString stringWithFormat:kAlbumPath, ID, pageId];
+    NSString *path = [NSString stringWithFormat:kAlbumPath, @(ID), @(pageId)];
     return [self GET:path parameters:@{@"device" : @"iPhone"} completionHandler:^(id responseObj, NSError *error) {
         completionHandle([AlbumModel mj_objectWithKeyValues:responseObj], error);
     }];

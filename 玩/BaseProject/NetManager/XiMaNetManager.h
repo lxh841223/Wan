@@ -7,8 +7,7 @@
 //
 
 #import "BaseNetManager.h"
-#import "RankingListModel.h"
-#import "AlbumModel.h"
+#import "XiMaLaYaModel.h"
 
 @interface XiMaNetManager : BaseNetManager
 
